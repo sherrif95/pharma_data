@@ -3,11 +3,7 @@ AS
 SELECT
     d.Month,
     d.ProductID,
-    p.ProductName,
-    p.TherapeuticArea,
     d.CountryCode,
-    c.Country,
-    c.Region,
 
     d.ForecastUnits,
     d.ActualDemandUnits,
@@ -29,9 +25,3 @@ SELECT
     END AS ForecastAccuracyBand
 
 FROM prod_global.silver_layer.demand_forecast_actual d
-
-LEFT JOIN prod_global.silver_layer.dim_product p
-    ON d.ProductID = p.ProductID
-
-LEFT JOIN prod_global.silver_layer.dim_country c
-    ON d.CountryCode = c.CountryCode;

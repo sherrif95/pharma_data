@@ -3,11 +3,7 @@ AS
 SELECT
     i.Month,
     i.ProductID,
-    p.ProductName,
-    p.TherapeuticArea,
     i.CountryCode,
-    c.Country,
-    c.Region,
 
     i.OnHandUnits,
     i.SafetyStockUnits,
@@ -31,11 +27,6 @@ SELECT
 
 FROM prod_global.silver_layer.inventory_monthly i
 
-LEFT JOIN prod_global.silver_layer.dim_product p
-    ON i.ProductID = p.ProductID
-
-LEFT JOIN prod_global.silver_layer.dim_country c
-    ON i.CountryCode = c.CountryCode
 
 LEFT JOIN prod_global.silver_layer.demand_forecast_actual d
     ON i.Month = d.Month

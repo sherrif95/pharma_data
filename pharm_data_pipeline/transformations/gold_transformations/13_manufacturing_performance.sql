@@ -4,8 +4,6 @@ SELECT
     b.ProductionDate,
     b.BatchID,
     b.ProductID,
-    p.ProductName,
-    p.TherapeuticArea,
     b.PlantID,
     pl.PlantName,
     pl.CountryCode,
@@ -34,9 +32,6 @@ SELECT
     END AS YieldPerformanceBand
 
 FROM prod_global.silver_layer.production_batches b
-
-LEFT JOIN prod_global.silver_layer.dim_product p
-    ON b.ProductID = p.ProductID
 
 LEFT JOIN prod_global.silver_layer.dim_plant pl
     ON b.PlantID = pl.PlantID

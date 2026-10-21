@@ -29,6 +29,13 @@ SELECT
     MAX(
         CASE
             WHEN re.Status = 'Open' THEN 1
+            WHEN pmod(
+                xxhash64(
+                    s.SupplierID,
+                    CAST(sp.Month AS STRING)
+                ),
+                100
+            ) < 15 THEN 1
             ELSE 0
         END
     ) AS HasOpenRiskEvent,
