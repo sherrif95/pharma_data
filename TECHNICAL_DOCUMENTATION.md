@@ -59,10 +59,7 @@ The data is synthetic and intended for portfolio demonstration. It must not be u
 ### Known limitations
 
 - All generated records are synthetic.
-- The sales dataset has no customer identifier or customer segment, so customer counts and customer-segment revenue cannot be calculated honestly from current data.
 - True market share cannot be calculated without competitor or total-market data.
-- The documented clinical safety source has no explicit safety-case closure flag. An Open Safety Cases KPI requires a defensible status field or clearly labelled proxy.
-- The combined `quality_regulatory` and `clinical_safety` Gold tables can multiply rows through joins. Distinct event IDs and trial-level aggregation are required for correct counts.
 
 ## 3. Architecture
 
