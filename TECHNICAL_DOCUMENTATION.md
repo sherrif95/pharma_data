@@ -2,6 +2,7 @@
 ## Technical Documentation
 
 > **Data notice:** This project uses synthetic data for portfolio and demonstration purposes. It does not represent real patients, clinical trials, suppliers, manufacturing operations, or commercial transactions.
+> 
 >  **AI notice:** This project uses AI to debug code and in some instances like in AWS lambda, use AI entirely to generate the code that generates synthetic daily data.
 
 ## Contents
