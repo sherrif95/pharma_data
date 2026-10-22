@@ -170,7 +170,7 @@ Catalog: `prod_global`
 
 ### Bronze layer
 
-Schema: `prod_global.bronze_layer`
+Schema: `prod_global.bronze_layer`. Link to SQL Ingestion code: https://github.com/sherrif95/pharma_data/tree/9bafa3347b9b72b162c89cf585f97bf2e796c908/pharm_data_pipeline/transformations/bronze_transformations
 
 Bronze tables ingest raw operational files with minimal transformation. The project uses Lakeflow streaming tables and file-arrival ingestion to support incremental processing when new files arrive. This reduces the need to reprocess all raw files for every arrival. Batch or materialized ingestion remains an alternative if the latency or operating model changes.
 
