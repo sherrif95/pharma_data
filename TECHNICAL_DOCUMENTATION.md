@@ -5,7 +5,7 @@
 > 
 >  **AI notice:** This project uses AI to debug code and in some instances like in AWS lambda, use AI entirely to generate the code that generates synthetic daily data.
 >
-> **Scroll to bottom for link to Power BI report**
+> **Navigate to section 8 for link to Power BI report**
 
 ## Contents
 1. [Executive summary](#1-executive-summary)
