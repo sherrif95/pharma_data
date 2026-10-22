@@ -195,13 +195,13 @@ Documented Bronze tables include:
 
 ### Silver layer
 
-Schema: `prod_global.silver_layer`. Link to silver layer transformation SQL 
+Schema: `prod_global.silver_layer`. Link to silver layer transformation SQL https://github.com/sherrif95/pharma_data/tree/02ab589d85b9d3ae0bc2b04e8cecacac30472e90/pharm_data_pipeline/transformations/silver_transformations
 
 Silver standardizes and prepares ingested datasets for analysis. It contains cleaned operational tables and master-data dimensions used by Gold transformations. It is the intended layer for resolving schema, type, and data-quality issues before business-facing aggregation.
 
 ### Gold layer
 
-Schema: `prod_global.gold_layer`. Link to gold layer transformations https://github.com/sherrif95/pharma_data/tree/9bafa3347b9b72b162c89cf585f97bf2e796c908/pharm_data_pipeline/transformations/gold_transformations
+Schema: `prod_global.gold_layer`. Link to gold layer transformations with SQL https://github.com/sherrif95/pharma_data/tree/9bafa3347b9b72b162c89cf585f97bf2e796c908/pharm_data_pipeline/transformations/gold_transformations
 
 Gold contains seven principal analytical tables and five shared dimensions.
 
