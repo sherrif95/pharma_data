@@ -195,7 +195,7 @@ Documented Bronze tables include:
 
 ### Silver layer
 
-Schema: `prod_global.silver_layer`
+Schema: `prod_global.silver_layer`. Link to silver layer transformation SQL https://github.com/sherrif95/pharma_data/tree/9bafa3347b9b72b162c89cf585f97bf2e796c908/pharm_data_pipeline/transformations/gold_transformations
 
 Silver standardizes and prepares ingested datasets for analysis. It contains cleaned operational tables and master-data dimensions used by Gold transformations. It is the intended layer for resolving schema, type, and data-quality issues before business-facing aggregation.
 
