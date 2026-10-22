@@ -309,10 +309,8 @@ The report uses a consistent Bayer-inspired design system: dark navy navigation/
 
 The source sales fields include `SalesID`, `SaleDate`, `ProductID`, `CountryCode`, `UnitsSold`, `UnitPrice`, `Channel`, and `NetSales`.
 
-- Customer counts and customer-segment revenue are not available because customer identifiers and segments are absent.
 - Market share is not available without competitor or total-market data.
 - Therapeutic-area analyses require the `ProductID` relationship to `dim_product`.
-- Demand attainment can be calculated as actual demand divided by forecast demand, but the aggregation and period must be defined carefully.
 
 ### Quality and Regulatory limitations
 
@@ -324,9 +322,7 @@ The source sales fields include `SalesID`, `SaleDate`, `ProductID`, `CountryCode
 ### Clinical and Safety limitations
 
 - Total clinical trials should count distinct `TrialID`.
-- Active trials require a clear rule based on the actual `RecruitmentStatus` values.
 - Total safety cases should count distinct `AdverseEventID`.
-- The documented `adverse_events` schema has no dedicated closure status. Do not infer Open Safety Cases directly from `Outcome` without explicitly defining and labelling a proxy.
 - Trial-level enrollment should be aggregated once per `TrialID` to avoid duplication caused by joining adverse events.
 
 ## 9. KPI and measure definitions
