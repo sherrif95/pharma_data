@@ -54,10 +54,6 @@ Additional folders will contain implementation assets as they are added.
 
 This project uses synthetic data. It does not represent actual patients, clinical trials, pharmaceutical operations, suppliers, or commercial transactions.
 
-## Known Limitations
-
-Customer-level analytics and true market share require data that is not currently available in the source datasets. Safety-case status metrics must be based on validated source fields.
-
 ## Documentation
 
-See the `docs/` folder for the detailed project documentation covering the architecture, data layers, modelling, Power BI reporting, automation, and validation.
+See the TECHNICAL_DOCUMENTATION.md for the detailed project documentation covering the architecture, data layers, modelling, Power BI reporting, automation, and validation.
